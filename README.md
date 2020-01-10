@@ -24,7 +24,7 @@ One the data is gathered it may be run through a keyword filter, based on a user
 ### Bismarck in use
 
 This is Bismarck(App) before running data collection
-![Bismarck Before](scratch/after.png "Before application run")
+![Bismarck Before](scratch/before.png "Before application run")
 
 This is Bismarck after running data collection and analysis
 ![Bismarck After](scratch/after.png "After application run")
