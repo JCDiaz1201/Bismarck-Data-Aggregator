@@ -13,13 +13,13 @@ Once the data is collected from each individual API it is persisted on three sep
 
 One the data is gathered it may be run through a keyword filter, based on a users preferences, and renders relevant insights into the nature of the user's posts based on keyword matches. In the demo below we run political keywords through Bismarck Marquee's posts to see on which platforms, if any, he references political keywords and thus a simple, but tailored, insight into his posts.
 
-###
+### Application in use
 
 This is Bismarck(App) before running data collection
-![Bismarck Before](/Users/jdiaz/WorkSpace/hackReactor/bismarck/scratch/after.png "Before application run")
+![Bismarck Before](scratch/after.png "Before application run")
 
 This is Bismarck after running data collection and analysis
-![Bismarck After](/Users/jdiaz/WorkSpace/hackReactor/bismarck/scratch/before.png "After application run")
+![Bismarck After](scratch/after.png"After application run")
 
 From this we can gather that Bismarck is somewhat but not heavily political on his Instagram posts; on Twitter his posts are significantly more political in nature while there is no political content to speak of on his Tumblr posts.
 
