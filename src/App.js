@@ -2,8 +2,10 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import C3Chart from "react-c3js";
 import "c3/c3.css";
-import Menu from "./components/Menu";
 import Axios from "axios";
+
+import Menu from "./components/Menu";
+import "./styles/App.css";
 
 class App extends Component {
   constructor(props) {
@@ -123,17 +125,19 @@ class App extends Component {
             compileData={this.compileData}
           />
         </div>
-        <div className="graph">
-          <h2>Instagram</h2>
-          <C3Chart data={this.state.igData} />
-        </div>
-        <div className="graph">
-          <h2>Twitter</h2>
-          <C3Chart data={this.state.twtData} />
-        </div>
-        <div className="graph">
-          <h2>Tumblr</h2>
-          <C3Chart data={this.state.tumbData} />
+        <div className="graph-tables">
+          <div className="graph">
+            <h2>Instagram</h2>
+            <C3Chart data={this.state.igData} />
+          </div>
+          <div className="graph">
+            <h2>Twitter</h2>
+            <C3Chart data={this.state.twtData} />
+          </div>
+          <div className="graph">
+            <h2>Tumblr</h2>
+            <C3Chart data={this.state.tumbData} />
+          </div>
         </div>
       </div>
     );

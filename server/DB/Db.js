@@ -4,6 +4,8 @@ const twtDb = require("./config/twt.db.mongoConfig");
 const tumbDb = require("./config/tumb.db.mongoConfig");
 
 let insertIgData = dataArray => {
+  console.log(dataArray);
+
   for (let index = 0; index < dataArray.length; index++) {
     let newItem = {
       post: dataArray[index].caption
@@ -12,7 +14,6 @@ let insertIgData = dataArray => {
       if (err) {
         return error;
       }
-      console.log("Success");
     });
   }
 };
@@ -28,12 +29,13 @@ let insertTwtData = dataArray => {
       if (err) {
         return error;
       }
-      console.log("Success");
     });
   }
 };
 
 let insertTumbData = dataArray => {
+  console.log(dataArray);
+
   for (let index = 0; index < dataArray.length; index++) {
     let newItem = {
       post: dataArray[index]
@@ -42,7 +44,6 @@ let insertTumbData = dataArray => {
       if (err) {
         return error;
       }
-      console.log("Success");
     });
   }
 };
