@@ -19,7 +19,7 @@ This is Bismarck(App) before running data collection
 ![Bismarck Before](scratch/after.png "Before application run")
 
 This is Bismarck after running data collection and analysis
-![Bismarck After](scratch/after.png"After application run")
+![Bismarck After](scratch/after.png "After application run")
 
 From this we can gather that Bismarck is somewhat but not heavily political on his Instagram posts; on Twitter his posts are significantly more political in nature while there is no political content to speak of on his Tumblr posts.
 
