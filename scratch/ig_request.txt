@@ -1,0 +1,28 @@
+This gets the oauth code
+https://api.instagram.com/oauth/authorize?app_id=578256629390368&redirect_uri=https://the-hamiltonian.herokuapp.com/&scope=user_profile,user_media&response_type=code
+
+this gets you your access_token
+curl -X POST \
+  https://api.instagram.com/oauth/access_token \
+  -F app_id=578256629390368 \
+  -F app_secret=f4506e0af934634e26e63834444c1bc0 \
+  -F grant_type=authorization_code \
+  -F redirect_uri=https://the-hamiltonian.herokuapp.com/ \
+  -F code=AQDnMcbUkyl8xQ1zpp1IzK9WwCMNs7erfUrgr6ICeYZgDR9FLYPx-UmhwtNreZE99gysPxE8i02qhlUzXjPdh4eVkg-ql5B0_6AGJt4QkO7zbTRbsnrNOcsmp3Za79hP6gVm6wqNmR-qE_5_p3D7z8sMS8eEMW419bBj2wGP1CZqxP4KduSjmIVsOsS0PZ7ZhyCK-SMoEZAiMnqhzxbGRWFnszVHA0UqF_WasLIMeNqPZg
+
+below is an example of the access_token
+{"access_token": "IGQVJWa1BuX2F2Y05zSlNudmdpUEw4M2N5TGtCaXJOckFrRFhHNjR1aHRWUmNucW1MOFJFMUhFVVlRMEVqaTNjYURBUW1zWjgtVDh3TWhySk1FQUN0blBjM0hnNHpSd09kSzIwMHNOcy0taVBodDU3ZAzNKaXlTZAzE5QVZAn", "user_id": 17841427698982474}
+
+below is to get user post id's and its assc captions
+curl -X GET \
+  'https://graph.instagram.com/me/media?fields=id,caption&access_token=IGQVJWQUtfTDhvQ2N5RU9zWURlcUVnS0xuQzVINU1LRlBnTmtkdUNYRWp5Nm5PWTFFMHpyZAGluRUUwT25VOWhpTXVvblNtYldMdExPdmk2MjhfYjZALNGdMUTRBSnJXUUtCRjN4RVN3'
+
+below created a long lived access_token, 60 days!
+curl -i -X GET "https://graph.instagram.com/access_token?grant_type=ig_exchange_token&client_secret=f4506e0af934634e26e63834444c1bc0&access_token=IGQVJXbFZAPRzIydjB6NWN0cEt2bm9DTWJnSndHdkxHRVNXVEJKWWVsQXFrVTNnaHNTbjRram0tcVVOR2J5Uk1ZAcDA1X210OXNLZAGlJZA1ZAXcS1WSF9YazhFeUJJS2ozaVh6aXEta2hVZAFNWeTZAOQXlaRVlaQzJydTVXUVlZA"
+access_token=IGQVJXbFZAPRzIydjB6NWN0cEt2bm9DTWJnSndHdkxHRVNXVEJKWWVsQXFrVTNnaHNTbjRram0tcVVOR2J5Uk1ZAcDA1X210OXNLZAGlJZA1ZAXcS1WSF9YazhFeUJJS2ozaVh6aXEta2hVZAFNWeTZAOQXlaRVlaQzJydTVXUVlZA
+
+fb access_token generation
+curl -X GET "https://graph.facebook.com/oauth/access_token?client_id=578256629390368&client_secret=f4506e0af934634e26e63834444c1bc0&grant_type=client_credentials"
+
+tumblr get request
+curl -X GET "https://api.tumblr.com/v2/blog/bismarckmarquee.tumblr.com/posts/text?api_key=gKTUGP6xgxQof9ddMHKqir0OVRQdHgNgfehKmpX4qHryI2K46B&limit=15"
