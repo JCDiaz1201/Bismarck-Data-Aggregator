@@ -15,12 +15,6 @@ Once the data is collected from each individual API it is persisted on three sep
 
 One the data is gathered it may be run through a keyword filter, based on a users preferences, and renders relevant insights into the nature of the user's posts based on keyword matches. In the demo below we run political keywords through Bismarck Marquee's posts to see on which platforms, if any, he references political keywords and thus a simple, but tailored, insight into his posts.
 
-### Below are Bismarck Marquee social media profiles
-
-![Bismarck Marquee Instagram](scratch/ig.png "Dummy Instagram Profile")
-![Bismarck Marquee Twitter](scratch/twt.png "Dummy Twitter Profile")
-![Bismarck Marquee Instagram](scratch/tumblr.png "Dummy Tumblr Profile")
-
 ### Bismarck in use
 
 This is Bismarck(App) before running data collection
